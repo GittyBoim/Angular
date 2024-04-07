@@ -1,0 +1,27 @@
+<div class="row newFeedback">
+    <form #newFeedbackForm="ngForm"[formGroup]="feedback" class="col-sm-7" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="name">שם</label>
+            <input id="name" type="text" formControlName="name" class="form-control" [ngStyle]="{'background-color':'white'}" >
+            <div class="alert alert-danger" style="background-color:rgb(255,151,151);text-align: center;" [hidden]="feedback.controls.name.valid">
+            שם צריך להכיל אותיות בלבד
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email">אימייל</label>
+            <input id="email" type="text" formControlName="email" class="form-control" [ngStyle]="{'background-color':'white'}">
+            <div class="alert alert-danger" style="background-color:rgb(255,151,151);text-align: center;" [hidden]="feedback.controls.email.valid||feedback.controls.email.pristine">
+            כתובת מייל לא תקינה
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="content">תגובה</label>
+            <textarea id="content" rows="6"  formControlName="content" class="form-control" [ngStyle]="{'background-color':'white'}"></textarea>
+            <div class="alert alert-danger" style="background-color:rgb(255,151,151);text-align: center;" [hidden]="feedback.controls.content.valid||feedback.controls.content.pristine">
+            שדה חובה
+            </div>
+        </div>
+        <button type="submit" class="btn" style="border:1px solid #5f4500; margin:10px;"[disabled]="!newFeedbackForm.valid">שמירה</button>
+    </form>
+    <img class="col-sm-5" src="assets/thankYou.gif">
+</div>

@@ -1,0 +1,18 @@
+<div class="myServices row">
+    <div class="col-sm-7 content">
+        <h1 class="responsive-font-example display-1">MAKE IT<br>SIMPLE</h1>
+        <p  class="responsive-font-example display-5">
+            במהלך השנים פיתחתי מגוון שירותי<br>
+            הפקה יחוודים שיהפכו את החוויה<br>
+            שלכם לנעימה וחסרת דאגות
+        </p>
+        <div class="services row">
+            <a class="btn btn col-sm-5" routerLink="service/{{service.Title}}" *ngFor="let service of services">{{service.Title}}</a>
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+    <div class="col-sm-5"> 
+        <img  class="img-fluid" src="assets/feedback.jpg">
+    </div>
+</div>
+

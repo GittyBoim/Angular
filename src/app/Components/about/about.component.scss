@@ -1,0 +1,28 @@
+.about{
+    direction: rtl;
+    background-color:rgba(240,228,196,1);
+}
+.content{
+    direction:rtl;
+    color:black;
+    padding-right:120px;
+    padding-top:20px;
+}
+.content>p{
+    font-size:22px;
+    margin: 0px 0px 10px;
+    padding-left:100px;
+}
+.content>h1{
+    padding:90px 60px;
+    background-color:#D2B25C;
+    font:40px Arial,sans-serif;
+    margin:15px 0px 50px;
+    display: inline-block;
+}
+@media screen and (max-width:676px){
+    .content{
+        padding-right: 10px;
+        padding-left:10px;
+    }
+}

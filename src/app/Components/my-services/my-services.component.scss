@@ -1,0 +1,27 @@
+.myServices{
+    direction:rtl;
+    background-color:rgba(240,228,196,1);
+}
+.content>h1{
+    color:#5f4500;
+    font-family:Arial,sans-serif;
+    margin: 60px 0px 40px;
+}
+.content>p{
+    color:#5f4500;
+    font-family:Arial,sans-serif;
+}
+.content{
+    text-align:center;
+}
+.services{
+    display:flex;
+    flex-wrap: wrap;
+    padding:50px;
+}
+.services>a{
+    font:19px arial,sans-serif;
+    color:#5f4500;
+    border:2px solid #5f4500;
+    margin:20px;
+}

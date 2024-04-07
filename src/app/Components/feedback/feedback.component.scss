@@ -1,0 +1,25 @@
+.feedback{
+    background-color:rgba(240,228,196,1);
+    height:85vh;
+}
+.content{
+    direction:rtl; height:100vh; 
+    padding-top:15px;
+    height:70vh;
+    overflow-y: scroll;
+    overflow-x:hidden;
+}
+.content>div>div>h1{
+    padding:30px;
+    background-color:#D2B25C;
+    font: Arial,sans-serif;
+    margin:15px 0px 15px;
+    display: inline-block;
+}
+.content>div{
+    padding:15px 60px; 
+    background-color:rgba(240,228,196,1);
+    border-bottom: 1px solid #5f4500;
+}
+
+
